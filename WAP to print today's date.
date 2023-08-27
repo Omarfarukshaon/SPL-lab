@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+	int day, month, year;
+	scanf("%d %d %d", &day,&month,&year);
+	if(day<=31 &&  month<=12)
+		printf("Today's date:%d-%d-%d",day,month,year);
+	else
+		printf("Error");
+return 0;
+}
