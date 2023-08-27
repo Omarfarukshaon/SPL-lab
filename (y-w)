@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+	int z,x,k,y,w;
+	scanf("%d %d %d %d", &x,&k,&y,&w);
+	if((y-w)!=0){
+		z=(x-k)/(float)(y-w);
+	printf("The value is:\%.3f",z);
+	}
+	else
+		printf("It is undefined ");
+return 0;
+}
