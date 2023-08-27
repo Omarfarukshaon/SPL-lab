@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main (){
+     printf("\"Welcome to IST\" ");
+     printf(" \nCSE 1st Semester\n");
+     printf("Name:Shaon\n");
+     printf ("Roll:22026\n");
+     printf("Session:2021-22\n");
+return 0;
+}
