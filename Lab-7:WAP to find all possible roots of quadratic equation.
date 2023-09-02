@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+float a,b,c,d,x1,x2;
+scanf("%f",&a);
+if(a!=0){
+	scanf("%f %f",&b,&c);
+	d=b*b-4*a*c;
+	if(d==0)
+		printf("Unique roots are x1=x2=%.2f",-b/(2*a));
+	else if(d>0){
+		x1=(-b+sqrt(d))/(2*a);
+		x2=(-b-sqrt(d))/(2*a);
+		printf("x1=%.2f	x2=%.2f",x1,x2);
+    }
+	else{
+		d=d*(-1);
+		x1=-b/(2*a);
+		x2=sqrt(d)/(2*a);
+		printf("x1=%.2f+%.2fi		x2=%.2f-%.2fi",x1,x2,x1,x2);
+    }
+}
+else
+	printf("Error!");
+return 0;
+}
