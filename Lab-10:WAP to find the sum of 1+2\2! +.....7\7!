@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+int i,fact=1;
+float sum=1;
+for(i=2;i<=7;i++){
+	fact*=i;
+	sum+=i/(float)fact;
+	}
+printf("The sum is %f.",sum);
+return 0;
+}
