@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+char text[20],word[20];
+gets(text);
+int n=strlen(text);
+printf("String length :%d\n",n);
+char aux[n];
+strcpy(aux,text);
+printf("Copied string :%s\n",aux);
+gets(word);
+if(strcmp(text,word)==0)
+	printf("strings are equal");
+else if(strcmp(text,word)>0)
+	printf("Compared string:%s\n",word);
+else
+	printf("Compared string:%s\n",text);
+printf("Added sting:\n");
+puts(strcat(strcat(text," "),word));
+return 0;
+}
