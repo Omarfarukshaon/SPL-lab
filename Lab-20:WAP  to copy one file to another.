@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main (){
+FILE *f1,*f2;
+char c;
+f1=fopen("Input.txt", "r");
+f2=fopen("Copy.txt", "w");
+while((c==getc(f1))!=EOF)
+putc(c,f2);
+fclose(f1);
+fclose(f2);
+f2=fopen("Copy.txt", "r");
+while((c=getc(f2))!=EOF)
+printf(" %c",c);
+fclose(f2);
+return 0;
+}
